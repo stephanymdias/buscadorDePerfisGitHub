@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #016B61;
+    color: #E5E9C5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#search-form{
+    display: flex;
+}
+
+#search-input{
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #E5E9C5;
+    border-radius: 5px 0 0 5px;
+    background-color: #9ECFD4;
+    color: #016B61;
+    outline: none;
+}
+
+#serach-form button{
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #9ECFD4;
+    color: #70B2B2;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.2s ease;
+}
+
+#search-form button:hover{
+    background-color: #E5E9C5;
+}
+
+#profile-container{
+    background-color: #70B2B2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.5);
+    display: none;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.profile-avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #016B61;
+}
+
+.profile-info{
+    width: 100%;
+}
+
+.profile-info h2{
+    font-size: 1.5rem;
+}
+
+.profile-info a{
+    color: #016B61;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.profile-info p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.stat{
+    text-align: center;
+}
+
+.stat span{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.error-card{
+    text-align: center;
+    color: #850E35;
+    padding: 20px;
+}
+
+@media (min-width: 600px){
+    body{
+        padding-top: 50px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    #profile-container{
+        padding: 30px;
+    }
+
+    .profile-card{
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .profile-avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info a{
+        margin-bottom: 0;
+    }
+
+    .profile-stats{
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
